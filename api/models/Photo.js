@@ -2,7 +2,7 @@ var mongoose	= require( 'mongoose' ),
 	photosController = require( '../controllers/photosController'),
 	Schema 		= mongoose.Schema,
 	http        = require('http');
-	// env			= require('../../.env');
+
 
 // creates an image
 

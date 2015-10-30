@@ -16,10 +16,7 @@
     "express": "^4.13.3",
     "jsonwebtoken": "^5.4.0",
     "mongoose": "^4.1.12",
-<<<<<<< HEAD
-    "morgan": "^1.6.1",
-=======
     "morgan": "^1.6.1"
->>>>>>> upstream/master
+
   }
 }

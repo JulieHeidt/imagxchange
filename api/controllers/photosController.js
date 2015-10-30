@@ -8,8 +8,8 @@ var Photo       = require( '../models/Photo')
 var moment      = require( "moment" )
 var join        = require( "path" ).join
 var dotenv      = require( "dotenv")
-	dotenv.config( { path: join( __dirname, "../../.env" )  } )
-	dotenv.load()
+    dotenv.config( { path: join( __dirname, "../../.env" )  } )
+    dotenv.load()
 var knox         = require('knox'),
     S3Client    = knox.createClient({
         bucket: "imagxchange",
@@ -18,11 +18,11 @@ var knox         = require('knox'),
     })
 
 function index ( req, res ) {
-	//gets all photo
-	Photo.find( function( err, photos ) {
-		if( err ) res.send ( err )
-			res.json( photos )
-	})
+    //gets all photo
+    Photo.find( function( err, photos ) {
+        if( err ) res.send ( err )
+            res.json( photos )
+    })
 }
 
 function create( req, res ) {
@@ -44,7 +44,7 @@ function create( req, res ) {
         //console.log('File [' + fieldname + ']: filename: ' + filename + ', encoding: ' + encoding + ', mimetype: ' + mimetype)
 
         var extendedName = path.basename( filename ).replace( /\.(?=\w{3,}$)/, moment().format( "[_]YYYY_MM_DD_HH_mm_ss[.]" ) ).replace( /\ /, "")               
-        var saveLocation = join( "/Users/Paul/tmp/", extendedName)
+        var saveLocation = join( "/Users/julieheidt/tmp/", extendedName)
         var writeStream = fs.createWriteStream( saveLocation )
 console.log('on file: ', fieldname);
         //pipe method to pipe to the PUT request
@@ -81,22 +81,22 @@ function addToDataBase( fieldData, req, res ) {
     var photo = new Photo()
     var newPrice;
 
-    photo.title            	= fieldData["newPhoto-name"]
-    photo.caption        	= fieldData["newPhoto-caption"]
-    photo.subject        	= fieldData["newPhoto-subject"]
+    photo.title             = fieldData["newPhoto-name"]
+    photo.caption           = fieldData["newPhoto-caption"]
+    photo.subject           = fieldData["newPhoto-subject"]
     //photo.user            = req.body.global.username
-    photo.location        	= fieldData["newPhoto-location"]
-    photo.datetaken       	= fieldData["newPhoto-datetaken"]
-    photo.signedUrlDate 	= new Date()
-    photo.ttl             	= 60*60*24*3
-    photo.url             	= fieldData.url
-    photo.startingprice    	= 2
-    photo.currentprice    	= 2
+    photo.location          = fieldData["newPhoto-location"]
+    photo.datetaken         = fieldData["newPhoto-datetaken"]
+    photo.signedUrlDate     = new Date()
+    photo.ttl               = 60*60*24*3
+    photo.url               = fieldData.url
+    photo.startingprice     = 2
+    photo.currentprice      = 2
 
     
 
     photo.save( function( err, response ) {
-    	console.log("Photo is: ", response)
+        console.log("Photo is: ", response)
         if( err ) res.send 
             res.json( { success: true, message: "photo created" } )
     })
@@ -106,49 +106,48 @@ function addToDataBase( fieldData, req, res ) {
 }
 
 function show( req, res ) {
-	//gets a single image
-	Photo.findById( req.params.photo_id, function( err, photo ) {
-		if( err ) res.send( err )
-			res.json( photo )
-	})
+    //gets a single image
+    Photo.findById( req.params.photo_id, function( err, photo ) {
+        if( err ) res.send( err )
+            res.json( photo )
+    })
 }
 
 function update( req, res ) {
-	//update a photo
-	Photo.findById( req.params.photo_id, function( err, photo ) {
-		if( err ) res.send( err )
+    //update a photo
+    Photo.findById( req.params.photo_id, function( err, photo ) {
+        if( err ) res.send( err )
 
-		if( req.body.title ) photo.title 					= req.body.title
-		if( req.body.currentprice ) photo.currentprice 		= req.body.currentprice
-		if( req.body.startingprice ) photo.startingprice 	= req.body.startingprice
-		if( req.body.date ) photo.date						= req.body.date
+        if( req.body.title ) photo.title                    = req.body.title
+        if( req.body.currentprice ) photo.currentprice      = req.body.currentprice
+        if( req.body.startingprice ) photo.startingprice    = req.body.startingprice
+        if( req.body.date ) photo.date                      = req.body.date
 
-		photo.save( function( err, photo ) {
-			if( err ) res.send( err )
-			photo.counterStart()
-			res.json( {success: true, message: "photo has been udpated"})
-		console.log("photo price saved")
-		})
-	})
+        photo.save( function( err, photo ) {
+            if( err ) res.send( err )
+            photo.counterStart()
+            res.json( {success: true, message: "photo has been udpated"})
+        console.log("photo price saved")
+        })
+    })
 }
 
 function destroy ( req, res ) {
-	//deletes a deal
-	Photo.remove( {
-		_id: req.params.photo_id
-	}, function( err, photo ) {
-		if( err ) res.send( err )
-		res.json( {success: true, message: "Your photo has been destroyed!"})
-	})
+    //deletes a deal
+    Photo.remove( {
+        _id: req.params.photo_id
+    }, function( err, photo ) {
+        if( err ) res.send( err )
+        res.json( {success: true, message: "Your photo has been destroyed!"})
+    })
 }
 
 
 
 module.exports = {
-	index	: index,
-	create 	: create,
-	show	: show,
-	update	: update,
-	destroy : destroy
+    index   : index,
+    create  : create,
+    show    : show,
+    update  : update,
+    destroy : destroy
 }
-

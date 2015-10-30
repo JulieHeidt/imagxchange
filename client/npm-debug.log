@@ -1,0 +1,553 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/julieheidt/.nvm/versions/io.js/v1.6.2/bin/iojs',
+1 verbose cli   '/Users/julieheidt/.nvm/versions/io.js/v1.6.2/bin/npm',
+1 verbose cli   'i' ]
+2 info using npm@2.13.3
+3 info using node@v1.6.2
+4 verbose readDependencies loading dependencies from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/package.json
+5 warn package.json imagxchange@1.0.0 No repository field.
+6 warn package.json imagxchange@1.0.0 No README data
+7 verbose install where, deps [ '/Users/julieheidt/projects/GA/Other/proj4/imagxchange/client',
+7 verbose install   [ 'bcrypt',
+7 verbose install     'bcrypt-nodejs',
+7 verbose install     'body-parser',
+7 verbose install     'cors',
+7 verbose install     'express',
+7 verbose install     'jsonwebtoken',
+7 verbose install     'mongoose',
+7 verbose install     'morgan' ] ]
+8 verbose install where, peers [ '/Users/julieheidt/projects/GA/Other/proj4/imagxchange/client',
+8 verbose install   [] ]
+9 verbose installManyTop reading for lifecycle /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/package.json
+10 info preinstall imagxchange@1.0.0
+11 verbose installManyTop reading scoped package data from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt-nodejs/package.json
+12 verbose installManyTop reading scoped package data from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/body-parser/package.json
+13 verbose installManyTop reading scoped package data from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/cors/package.json
+14 verbose installManyTop reading scoped package data from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/express/package.json
+15 verbose installManyTop reading scoped package data from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/jsonwebtoken/package.json
+16 verbose installManyTop reading scoped package data from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/mongoose/package.json
+17 verbose installManyTop reading scoped package data from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/morgan/package.json
+18 info package.json bcrypt-nodejs@0.0.3 No license field.
+19 verbose readDependencies loading dependencies from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/package.json
+20 verbose targetResolver reading package data from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt-nodejs/package.json
+21 verbose targetResolver reading package data from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/body-parser/package.json
+22 verbose targetResolver reading package data from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/cors/package.json
+23 verbose targetResolver reading package data from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/express/package.json
+24 verbose targetResolver reading package data from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/jsonwebtoken/package.json
+25 verbose targetResolver reading package data from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/mongoose/package.json
+26 verbose targetResolver reading package data from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/morgan/package.json
+27 verbose already installed skipping cors@^2.7.1 /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client
+28 verbose already installed skipping express@^4.13.3 /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client
+29 verbose already installed skipping jsonwebtoken@^5.4.0 /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client
+30 verbose already installed skipping mongoose@^4.1.12 /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client
+31 verbose already installed skipping morgan@^1.6.1 /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client
+32 silly cache add args [ 'bcrypt@^0.8.5', null ]
+33 verbose cache add spec bcrypt@^0.8.5
+34 silly cache add parsed spec { raw: 'bcrypt@^0.8.5',
+34 silly cache add   scope: null,
+34 silly cache add   name: 'bcrypt',
+34 silly cache add   rawSpec: '^0.8.5',
+34 silly cache add   spec: '>=0.8.5 <0.9.0',
+34 silly cache add   type: 'range' }
+35 silly addNamed bcrypt@>=0.8.5 <0.9.0
+36 verbose addNamed ">=0.8.5 <0.9.0" is a valid semver range for bcrypt
+37 silly addNameRange { name: 'bcrypt', range: '>=0.8.5 <0.9.0', hasData: false }
+38 silly mapToRegistry name bcrypt
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+42 verbose addNameRange registry:https://registry.npmjs.org/bcrypt not in flight; fetching
+43 verbose already installed skipping bcrypt-nodejs@0.0.3 /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client
+44 verbose already installed skipping body-parser@^1.14.1 /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client
+45 verbose request uri https://registry.npmjs.org/bcrypt
+46 verbose request no auth needed
+47 info attempt registry request try #1 at 00:45:07
+48 verbose request id 53ef6c984e7cfcd4
+49 verbose etag "3H6LF63LPBQKHHKQJNG3FSUQ8"
+50 http request GET https://registry.npmjs.org/bcrypt
+51 http 200 https://registry.npmjs.org/bcrypt
+52 silly get cb [ 200,
+52 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+52 silly get     etag: '"54GYB7CP0A69G30DEUBA4S45B"',
+52 silly get     'content-type': 'application/json',
+52 silly get     'cache-control': 'max-age=60',
+52 silly get     'content-length': '74270',
+52 silly get     'accept-ranges': 'bytes',
+52 silly get     date: 'Fri, 30 Oct 2015 07:45:10 GMT',
+52 silly get     via: '1.1 varnish',
+52 silly get     age: '0',
+52 silly get     connection: 'keep-alive',
+52 silly get     'x-served-by': 'cache-ord1732-ORD',
+52 silly get     'x-cache': 'MISS',
+52 silly get     'x-cache-hits': '0',
+52 silly get     'x-timer': 'S1446191110.145861,VS0,VE150',
+52 silly get     vary: 'Accept' } ]
+53 verbose get saving bcrypt to /Users/julieheidt/.npm/registry.npmjs.org/bcrypt/.cache.json
+54 silly addNameRange number 2 { name: 'bcrypt', range: '>=0.8.5 <0.9.0', hasData: true }
+55 silly addNameRange versions [ 'bcrypt',
+55 silly addNameRange   [ '0.1.2',
+55 silly addNameRange     '0.2.0',
+55 silly addNameRange     '0.2.1',
+55 silly addNameRange     '0.1.3',
+55 silly addNameRange     '0.2.2',
+55 silly addNameRange     '0.2.3',
+55 silly addNameRange     '0.2.4',
+55 silly addNameRange     '0.3.0',
+55 silly addNameRange     '0.3.1',
+55 silly addNameRange     '0.3.2',
+55 silly addNameRange     '0.4.0',
+55 silly addNameRange     '0.4.1',
+55 silly addNameRange     '0.5.0',
+55 silly addNameRange     '0.6.0',
+55 silly addNameRange     '0.7.0',
+55 silly addNameRange     '0.7.1',
+55 silly addNameRange     '0.7.2',
+55 silly addNameRange     '0.7.3',
+55 silly addNameRange     '0.7.4',
+55 silly addNameRange     '0.7.5',
+55 silly addNameRange     '0.7.6',
+55 silly addNameRange     '0.7.7',
+55 silly addNameRange     '0.7.8',
+55 silly addNameRange     '0.8.0',
+55 silly addNameRange     '0.8.1',
+55 silly addNameRange     '0.8.2',
+55 silly addNameRange     '0.8.3',
+55 silly addNameRange     '0.8.4',
+55 silly addNameRange     '0.8.5' ] ]
+56 silly addNamed bcrypt@0.8.5
+57 verbose addNamed "0.8.5" is a plain semver version for bcrypt
+58 silly cache afterAdd bcrypt@0.8.5
+59 verbose afterAdd /Users/julieheidt/.npm/bcrypt/0.8.5/package/package.json not in flight; writing
+60 verbose afterAdd /Users/julieheidt/.npm/bcrypt/0.8.5/package/package.json written
+61 silly install resolved [ { name: 'bcrypt',
+61 silly install resolved     description: 'A bcrypt library for NodeJS.',
+61 silly install resolved     keywords:
+61 silly install resolved      [ 'bcrypt',
+61 silly install resolved        'password',
+61 silly install resolved        'auth',
+61 silly install resolved        'authentication',
+61 silly install resolved        'encryption',
+61 silly install resolved        'crypt',
+61 silly install resolved        'crypto' ],
+61 silly install resolved     main: './bcrypt',
+61 silly install resolved     version: '0.8.5',
+61 silly install resolved     author: { name: 'Nick Campbell', url: 'https://github.com/ncb000gt' },
+61 silly install resolved     engines: { node: '>= 0.6.0' },
+61 silly install resolved     repository:
+61 silly install resolved      { type: 'git',
+61 silly install resolved        url: 'git+https://github.com/ncb000gt/node.bcrypt.js.git' },
+61 silly install resolved     license: 'MIT',
+61 silly install resolved     bugs: { url: 'https://github.com/ncb000gt/node.bcrypt.js/issues' },
+61 silly install resolved     scripts:
+61 silly install resolved      { test: 'node-gyp configure build && nodeunit test',
+61 silly install resolved        install: 'node-gyp rebuild' },
+61 silly install resolved     dependencies: { bindings: '1.2.1', nan: '2.0.5' },
+61 silly install resolved     devDependencies: { nodeunit: '~0.9.1' },
+61 silly install resolved     contributors:
+61 silly install resolved      [ [Object],
+61 silly install resolved        [Object],
+61 silly install resolved        [Object],
+61 silly install resolved        [Object],
+61 silly install resolved        [Object],
+61 silly install resolved        [Object],
+61 silly install resolved        [Object],
+61 silly install resolved        [Object],
+61 silly install resolved        [Object],
+61 silly install resolved        [Object],
+61 silly install resolved        [Object],
+61 silly install resolved        [Object],
+61 silly install resolved        [Object],
+61 silly install resolved        [Object] ],
+61 silly install resolved     gypfile: true,
+61 silly install resolved     gitHead: '5d97708f06754d7d7989c67ba867002d10013615',
+61 silly install resolved     homepage: 'https://github.com/ncb000gt/node.bcrypt.js#readme',
+61 silly install resolved     _id: 'bcrypt@0.8.5',
+61 silly install resolved     _shasum: '8e5b81b4db80e944f440005979ca8d58a961861d',
+61 silly install resolved     _from: 'bcrypt@>=0.8.5 <0.9.0',
+61 silly install resolved     _npmVersion: '2.13.3',
+61 silly install resolved     _nodeVersion: '3.0.0',
+61 silly install resolved     _npmUser: { name: 'defunctzombie', email: 'shtylman@gmail.com' },
+61 silly install resolved     dist:
+61 silly install resolved      { shasum: '8e5b81b4db80e944f440005979ca8d58a961861d',
+61 silly install resolved        tarball: 'http://registry.npmjs.org/bcrypt/-/bcrypt-0.8.5.tgz' },
+61 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+61 silly install resolved     directories: {},
+61 silly install resolved     _resolved: 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.5.tgz',
+61 silly install resolved     readme: 'ERROR: No README data found!' } ]
+62 info install bcrypt@0.8.5 into /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client
+63 info installOne bcrypt@0.8.5
+64 verbose installOne of bcrypt to /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client not in flight; installing
+65 verbose lock using /Users/julieheidt/.npm/_locks/bcrypt-26912eccdd3eef0f.lock for /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt
+66 silly install write writing bcrypt 0.8.5 to /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt
+67 verbose unbuild node_modules/bcrypt
+68 silly gentlyRm /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt is being purged from base /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client
+69 verbose gentlyRm don't care about contents; nuking /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt
+70 verbose tar unpack /Users/julieheidt/.npm/bcrypt/0.8.5/package.tgz
+71 verbose tar unpacking to /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt
+72 silly gentlyRm /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt is being purged
+73 verbose gentlyRm don't care about contents; nuking /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt
+74 silly gunzTarPerm modes [ '755', '644' ]
+75 silly gunzTarPerm extractEntry package.json
+76 silly gunzTarPerm extractEntry .npmignore
+77 silly gunzTarPerm extractEntry README.md
+78 silly gunzTarPerm extractEntry LICENSE
+79 silly gunzTarPerm extractEntry bcrypt.js
+80 silly gunzTarPerm extractEntry binding.gyp
+81 silly gunzTarPerm extractEntry .travis.yml
+82 silly gunzTarPerm extractEntry CHANGELOG.md
+83 silly gunzTarPerm extractEntry examples/async_compare.js
+84 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+85 silly gunzTarPerm extractEntry test/async.js
+86 silly gunzTarPerm extractEntry test/repetitions.js
+87 silly gunzTarPerm extractEntry test/sync.js
+88 silly gunzTarPerm extractEntry Makefile
+89 silly gunzTarPerm extractEntry src/bcrypt.cc
+90 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+91 silly gunzTarPerm extractEntry src/blowfish.cc
+92 silly gunzTarPerm extractEntry src/node_blf.h
+93 silly gunzTarPerm extractEntry werker.yml
+94 verbose write writing to /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/package.json
+95 info preinstall bcrypt@0.8.5
+96 verbose readDependencies loading dependencies from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/package.json
+97 silly prepareForInstallMany adding bindings@1.2.1 from bcrypt dependencies
+98 silly prepareForInstallMany adding nan@2.0.5 from bcrypt dependencies
+99 verbose readDependencies loading dependencies from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/package.json
+100 silly cache add args [ 'bindings@1.2.1', null ]
+101 verbose cache add spec bindings@1.2.1
+102 silly cache add args [ 'nan@2.0.5', null ]
+103 verbose cache add spec nan@2.0.5
+104 silly cache add parsed spec { raw: 'bindings@1.2.1',
+104 silly cache add   scope: null,
+104 silly cache add   name: 'bindings',
+104 silly cache add   rawSpec: '1.2.1',
+104 silly cache add   spec: '1.2.1',
+104 silly cache add   type: 'version' }
+105 silly addNamed bindings@1.2.1
+106 verbose addNamed "1.2.1" is a plain semver version for bindings
+107 silly mapToRegistry name bindings
+108 silly mapToRegistry using default registry
+109 silly mapToRegistry registry https://registry.npmjs.org/
+110 silly mapToRegistry uri https://registry.npmjs.org/bindings
+111 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+112 silly cache add parsed spec { raw: 'nan@2.0.5',
+112 silly cache add   scope: null,
+112 silly cache add   name: 'nan',
+112 silly cache add   rawSpec: '2.0.5',
+112 silly cache add   spec: '2.0.5',
+112 silly cache add   type: 'version' }
+113 silly addNamed nan@2.0.5
+114 verbose addNamed "2.0.5" is a plain semver version for nan
+115 silly mapToRegistry name nan
+116 silly mapToRegistry using default registry
+117 silly mapToRegistry registry https://registry.npmjs.org/
+118 silly mapToRegistry uri https://registry.npmjs.org/nan
+119 verbose addNameVersion registry:https://registry.npmjs.org/nan not in flight; fetching
+120 verbose request uri https://registry.npmjs.org/bindings
+121 verbose request no auth needed
+122 info attempt registry request try #1 at 00:45:11
+123 verbose etag "9T1GC8LK3NF0OJU9OPHCFIKS3"
+124 http request GET https://registry.npmjs.org/bindings
+125 verbose request uri https://registry.npmjs.org/nan
+126 verbose request no auth needed
+127 info attempt registry request try #1 at 00:45:11
+128 verbose etag "CJ3ZKOY24CWA1LM0KQ4KE7PG1"
+129 http request GET https://registry.npmjs.org/nan
+130 http 304 https://registry.npmjs.org/bindings
+131 silly get cb [ 304,
+131 silly get   { date: 'Fri, 30 Oct 2015 07:45:12 GMT',
+131 silly get     via: '1.1 varnish',
+131 silly get     'cache-control': 'max-age=60',
+131 silly get     etag: '"9T1GC8LK3NF0OJU9OPHCFIKS3"',
+131 silly get     age: '41',
+131 silly get     connection: 'keep-alive',
+131 silly get     'x-served-by': 'cache-ord1724-ORD',
+131 silly get     'x-cache': 'HIT',
+131 silly get     'x-cache-hits': '148',
+131 silly get     'x-timer': 'S1446191112.856253,VS0,VE0',
+131 silly get     vary: 'Accept' } ]
+132 verbose etag https://registry.npmjs.org/bindings from cache
+133 verbose get saving bindings to /Users/julieheidt/.npm/registry.npmjs.org/bindings/.cache.json
+134 http 304 https://registry.npmjs.org/nan
+135 silly get cb [ 304,
+135 silly get   { date: 'Fri, 30 Oct 2015 07:45:12 GMT',
+135 silly get     via: '1.1 varnish',
+135 silly get     'cache-control': 'max-age=60',
+135 silly get     etag: '"CJ3ZKOY24CWA1LM0KQ4KE7PG1"',
+135 silly get     age: '41',
+135 silly get     connection: 'keep-alive',
+135 silly get     'x-served-by': 'cache-ord1720-ORD',
+135 silly get     'x-cache': 'HIT',
+135 silly get     'x-cache-hits': '1',
+135 silly get     'x-timer': 'S1446191112.855797,VS0,VE0',
+135 silly get     vary: 'Accept' } ]
+136 verbose etag https://registry.npmjs.org/nan from cache
+137 verbose get saving nan to /Users/julieheidt/.npm/registry.npmjs.org/nan/.cache.json
+138 silly cache afterAdd bindings@1.2.1
+139 verbose afterAdd /Users/julieheidt/.npm/bindings/1.2.1/package/package.json not in flight; writing
+140 silly cache afterAdd nan@2.0.5
+141 verbose afterAdd /Users/julieheidt/.npm/nan/2.0.5/package/package.json not in flight; writing
+142 verbose afterAdd /Users/julieheidt/.npm/nan/2.0.5/package/package.json written
+143 verbose afterAdd /Users/julieheidt/.npm/bindings/1.2.1/package/package.json written
+144 silly install resolved [ { name: 'nan',
+144 silly install resolved     version: '2.0.5',
+144 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+144 silly install resolved     main: 'include_dirs.js',
+144 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+144 silly install resolved     scripts:
+144 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+144 silly install resolved        'rebuild-tests': 'pangyp rebuild --msvs_version=2013 --directory test',
+144 silly install resolved        docs: 'doc/.build.sh' },
+144 silly install resolved     contributors:
+144 silly install resolved      [ [Object],
+144 silly install resolved        [Object],
+144 silly install resolved        [Object],
+144 silly install resolved        [Object],
+144 silly install resolved        [Object],
+144 silly install resolved        [Object],
+144 silly install resolved        [Object] ],
+144 silly install resolved     devDependencies:
+144 silly install resolved      { bindings: '~1.2.1',
+144 silly install resolved        'node-gyp': '~2.0.2',
+144 silly install resolved        pangyp: '~2.2.0',
+144 silly install resolved        tap: '~0.7.1',
+144 silly install resolved        xtend: '~4.0.0' },
+144 silly install resolved     license: 'MIT',
+144 silly install resolved     gitHead: 'd13a2e9ce762fd130877b53c71d35963fa2cf689',
+144 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+144 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+144 silly install resolved     _id: 'nan@2.0.5',
+144 silly install resolved     _shasum: '365888014be1fd178db0cbfa258edf7b0cb1c408',
+144 silly install resolved     _from: 'nan@2.0.5',
+144 silly install resolved     _npmVersion: '2.13.3',
+144 silly install resolved     _nodeVersion: '3.0.0',
+144 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+144 silly install resolved     maintainers: [ [Object], [Object] ],
+144 silly install resolved     dist:
+144 silly install resolved      { shasum: '365888014be1fd178db0cbfa258edf7b0cb1c408',
+144 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-2.0.5.tgz' },
+144 silly install resolved     directories: {},
+144 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.0.5.tgz',
+144 silly install resolved     readme: 'ERROR: No README data found!' },
+144 silly install resolved   { name: 'bindings',
+144 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+144 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+144 silly install resolved     version: '1.2.1',
+144 silly install resolved     author:
+144 silly install resolved      { name: 'Nathan Rajlich',
+144 silly install resolved        email: 'nathan@tootallnate.net',
+144 silly install resolved        url: 'http://tootallnate.net' },
+144 silly install resolved     repository:
+144 silly install resolved      { type: 'git',
+144 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+144 silly install resolved     main: './bindings.js',
+144 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+144 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+144 silly install resolved     license: 'MIT',
+144 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+144 silly install resolved     _id: 'bindings@1.2.1',
+144 silly install resolved     scripts: {},
+144 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+144 silly install resolved     _from: 'bindings@1.2.1',
+144 silly install resolved     _npmVersion: '1.4.14',
+144 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+144 silly install resolved     maintainers: [ [Object], [Object] ],
+144 silly install resolved     dist:
+144 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+144 silly install resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+144 silly install resolved     directories: {},
+144 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+144 silly install resolved     readme: 'ERROR: No README data found!' } ]
+145 info install nan@2.0.5 into /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt
+146 info install bindings@1.2.1 into /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt
+147 info installOne nan@2.0.5
+148 verbose installOne of nan to /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt not in flight; installing
+149 info installOne bindings@1.2.1
+150 verbose installOne of bindings to /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt not in flight; installing
+151 verbose lock using /Users/julieheidt/.npm/_locks/nan-dc20d7eda225d97a.lock for /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/nan
+152 verbose lock using /Users/julieheidt/.npm/_locks/bindings-da2e25616f2a431b.lock for /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/bindings
+153 silly install write writing nan 2.0.5 to /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/nan
+154 silly install write writing bindings 1.2.1 to /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/bindings
+155 verbose unbuild node_modules/bcrypt/node_modules/nan
+156 verbose unbuild node_modules/bcrypt/node_modules/bindings
+157 silly gentlyRm /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/nan is being purged from base /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client
+158 verbose gentlyRm don't care about contents; nuking /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/nan
+159 silly gentlyRm /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/bindings is being purged from base /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client
+160 verbose gentlyRm don't care about contents; nuking /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/bindings
+161 verbose tar unpack /Users/julieheidt/.npm/nan/2.0.5/package.tgz
+162 verbose tar unpacking to /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/nan
+163 silly gentlyRm /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/nan is being purged
+164 verbose gentlyRm don't care about contents; nuking /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/nan
+165 verbose tar unpack /Users/julieheidt/.npm/bindings/1.2.1/package.tgz
+166 verbose tar unpacking to /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/bindings
+167 silly gentlyRm /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/bindings is being purged
+168 verbose gentlyRm don't care about contents; nuking /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/bindings
+169 silly gunzTarPerm modes [ '755', '644' ]
+170 silly gunzTarPerm modes [ '755', '644' ]
+171 silly gunzTarPerm extractEntry package.json
+172 silly gunzTarPerm extractEntry package.json
+173 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+174 silly gunzTarPerm extractEntry README.md
+175 silly gunzTarPerm extractEntry bindings.js
+176 silly gunzTarPerm extractEntry README.md
+177 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+178 silly gunzTarPerm extractEntry include_dirs.js
+179 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+180 silly gunzTarPerm extractEntry nan_converters.h
+181 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
+182 silly gunzTarPerm extractEntry LICENSE.md
+183 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+184 silly gunzTarPerm extractEntry .dntrc
+185 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+186 silly gunzTarPerm extractEntry appveyor.yml
+187 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+188 verbose write writing to /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/bindings/package.json
+189 info preinstall bindings@1.2.1
+190 verbose readDependencies loading dependencies from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/bindings/package.json
+191 silly gunzTarPerm extractEntry doc/new.md
+192 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 420 ]
+193 silly gunzTarPerm extractEntry doc/.build.sh
+194 silly gunzTarPerm modified mode [ 'doc/.build.sh', 509, 493 ]
+195 verbose readDependencies loading dependencies from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/bindings/package.json
+196 silly install resolved []
+197 verbose about to build /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/bindings
+198 info build /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/bindings
+199 silly gunzTarPerm extractEntry doc/buffers.md
+200 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 420 ]
+201 silly gunzTarPerm extractEntry doc/callback.md
+202 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 420 ]
+203 info linkStuff bindings@1.2.1
+204 silly linkStuff bindings@1.2.1 has /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules as its parent node_modules
+205 verbose linkBins bindings@1.2.1
+206 verbose linkMans bindings@1.2.1
+207 verbose rebuildBundles bindings@1.2.1
+208 info install bindings@1.2.1
+209 silly gunzTarPerm extractEntry doc/converters.md
+210 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 420 ]
+211 silly gunzTarPerm extractEntry doc/errors.md
+212 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 420 ]
+213 info postinstall bindings@1.2.1
+214 verbose unlock done using /Users/julieheidt/.npm/_locks/bindings-da2e25616f2a431b.lock for /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/bindings
+215 silly gunzTarPerm extractEntry doc/maybe_types.md
+216 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 420 ]
+217 silly gunzTarPerm extractEntry doc/methods.md
+218 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 420 ]
+219 silly gunzTarPerm extractEntry doc/asyncworker.md
+220 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 420 ]
+221 silly gunzTarPerm extractEntry doc/node_misc.md
+222 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
+223 silly gunzTarPerm extractEntry doc/persistent.md
+224 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 420 ]
+225 silly gunzTarPerm extractEntry doc/scopes.md
+226 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 420 ]
+227 silly gunzTarPerm extractEntry doc/script.md
+228 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 420 ]
+229 silly gunzTarPerm extractEntry doc/string_bytes.md
+230 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 420 ]
+231 silly gunzTarPerm extractEntry doc/v8_internals.md
+232 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 420 ]
+233 silly gunzTarPerm extractEntry doc/v8_misc.md
+234 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 420 ]
+235 silly gunzTarPerm extractEntry nan.h
+236 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+237 silly gunzTarPerm extractEntry nan_callbacks.h
+238 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 420 ]
+239 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+240 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 420 ]
+241 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+242 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 420 ]
+243 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+244 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 420 ]
+245 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+246 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 420 ]
+247 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+248 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+249 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+250 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+251 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+252 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 420 ]
+253 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+254 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 420 ]
+255 silly gunzTarPerm extractEntry nan_new.h
+256 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+257 silly gunzTarPerm extractEntry nan_object_wrap.h
+258 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 420 ]
+259 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+260 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 420 ]
+261 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+262 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 420 ]
+263 silly gunzTarPerm extractEntry nan_string_bytes.h
+264 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+265 silly gunzTarPerm extractEntry nan_weak.h
+266 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 420 ]
+267 silly gunzTarPerm extractEntry CHANGELOG.md
+268 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+269 silly gunzTarPerm extractEntry tools/package.json
+270 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 420 ]
+271 silly gunzTarPerm extractEntry tools/README.md
+272 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 420 ]
+273 silly gunzTarPerm extractEntry tools/1to2.js
+274 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 493 ]
+275 verbose write writing to /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/nan/package.json
+276 info preinstall nan@2.0.5
+277 verbose readDependencies loading dependencies from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/nan/package.json
+278 verbose readDependencies loading dependencies from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/nan/package.json
+279 silly install resolved []
+280 verbose about to build /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/nan
+281 info build /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/nan
+282 info linkStuff nan@2.0.5
+283 silly linkStuff nan@2.0.5 has /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules as its parent node_modules
+284 verbose linkBins nan@2.0.5
+285 verbose linkMans nan@2.0.5
+286 verbose rebuildBundles nan@2.0.5
+287 info install nan@2.0.5
+288 info postinstall nan@2.0.5
+289 verbose unlock done using /Users/julieheidt/.npm/_locks/nan-dc20d7eda225d97a.lock for /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt/node_modules/nan
+290 verbose about to build /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt
+291 info build /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt
+292 info linkStuff bcrypt@0.8.5
+293 silly linkStuff bcrypt@0.8.5 has /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules as its parent node_modules
+294 verbose linkBins bcrypt@0.8.5
+295 verbose linkMans bcrypt@0.8.5
+296 verbose rebuildBundles bcrypt@0.8.5
+297 verbose rebuildBundles [ 'bindings', 'nan' ]
+298 info install bcrypt@0.8.5
+299 verbose unsafe-perm in lifecycle true
+300 info bcrypt@0.8.5 Failed to exec install script
+301 verbose unlock done using /Users/julieheidt/.npm/_locks/bcrypt-26912eccdd3eef0f.lock for /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt
+302 verbose stack Error: bcrypt@0.8.5 install: `node-gyp rebuild`
+302 verbose stack Exit status 1
+302 verbose stack     at EventEmitter.<anonymous> (/Users/julieheidt/.nvm/versions/io.js/v1.6.2/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+302 verbose stack     at emitTwo (events.js:87:13)
+302 verbose stack     at EventEmitter.emit (events.js:169:7)
+302 verbose stack     at ChildProcess.<anonymous> (/Users/julieheidt/.nvm/versions/io.js/v1.6.2/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+302 verbose stack     at emitTwo (events.js:87:13)
+302 verbose stack     at ChildProcess.emit (events.js:169:7)
+302 verbose stack     at maybeClose (child_process.js:984:16)
+302 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1057:5)
+303 verbose pkgid bcrypt@0.8.5
+304 verbose cwd /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client
+305 error Darwin 15.0.0
+306 error argv "/Users/julieheidt/.nvm/versions/io.js/v1.6.2/bin/iojs" "/Users/julieheidt/.nvm/versions/io.js/v1.6.2/bin/npm" "i"
+307 error node v1.6.2
+308 error npm  v2.13.3
+309 error code ELIFECYCLE
+310 error bcrypt@0.8.5 install: `node-gyp rebuild`
+310 error Exit status 1
+311 error Failed at the bcrypt@0.8.5 install script 'node-gyp rebuild'.
+311 error This is most likely a problem with the bcrypt package,
+311 error not with npm itself.
+311 error Tell the author that this fails on your system:
+311 error     node-gyp rebuild
+311 error You can get their info via:
+311 error     npm owner ls bcrypt
+311 error There is likely additional logging output above.
+312 verbose exit [ 1, true ]
+313 verbose unbuild node_modules/bcrypt
+314 info preuninstall bcrypt@0.8.5
+315 info uninstall bcrypt@0.8.5
+316 verbose unbuild rmStuff bcrypt@0.8.5 from /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules
+317 info postuninstall bcrypt@0.8.5
+318 silly gentlyRm /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt is being purged from base /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client
+319 verbose gentlyRm don't care about contents; nuking /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt
+320 silly vacuum-fs purging /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules/bcrypt
+321 silly vacuum-fs quitting because other entries in /Users/julieheidt/projects/GA/Other/proj4/imagxchange/client/node_modules
